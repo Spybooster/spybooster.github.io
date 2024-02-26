@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,27 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
         integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./favicon.ico">
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript">
-        // Get the current hour
-        var currentHour = new Date().getHours();
-
-        // Define the CSS file URLs for morning and night
-        var morningCSS = 'light.css';
-        var nightCSS = 'dark.css';
-
-        // Determine whether it's morning or night
-        var selectedCSS = currentHour >= 6 && currentHour < 18 ? morningCSS : nightCSS;
-
-        // Create a new link element for the stylesheet
-        var linkElement = document.createElement('link');
-        linkElement.setAttribute('rel', 'stylesheet');
-        linkElement.setAttribute('type', 'text/css');
-        linkElement.setAttribute('href', selectedCSS);
-
-        // Append the link element to the head of the document
-        document.head.appendChild(linkElement);
-    </script>
+    <link rel="stylesheet" type="text/css" href="assets/dark.css">
+    <script type="text/javascript" src="assets/script.js"></script>
 </head>
 
 <body>
@@ -99,7 +80,7 @@
                     deeper into the world of programming.</p>
                         <div>
                             <div>
-                                <span>AGE . . . . </span>24
+                                <span>AGE . . . . </span>27
                             </div>
                             <div>
                                 <span>RESIDENCE . . . . </span>Philippines
@@ -118,23 +99,54 @@
                     <div class="line-left">
                         <article class="line-down">
                             <div class="fas fa-code"></div>
-                            <h4>WEB DEVELOPMENT</h4>
-                            <p>Modern and mobile-ready website that will help you reach all of your marketing.</p>
+                            <h4>Web Development</h4>
+                            <p>Create stunning, responsive websites tailored to your needs, from elegant portfolios to dynamic web
+                                applications.</p>
                         </article>
                         <article class="line-down">
-                            <div class="fas fa-music"></div>
-                            <h4>MUSIC WRITING</h4>
-                            <p>Music copying, transcription, arranging and composition services.</p>
+                            <div class="fas fa-paint-brush"></div>
+                            <h4>Front-end Design</h4>
+                            <p>Design visually captivating user interfaces with modern HTML, CSS, and JavaScript to engage your
+                                audience.</p>
                         </article>
                         <article>
-                            <div class="fas fa-bullhorn"></div>
-                            <h4>ADVETISING</h4>
-                            <p>Advertising services include television, radio, print, mail and web.</p>
+                            <div class="fas fa-database"></div>
+                            <h4>Back-end Development</h4>
+                            <p>Implement robust server-side solutions using PHP, Node.js, or Python to power your web applications.</p>
                         </article>
                         <article>
-                            <div class="fas fa-gamepad"></div>
-                            <h4>GAME DEVELOPMENT</h4>
-                            <p>Developing memorable and unique mobile android, ios games.</p>
+                            <div class="fas fa-laptop"></div>
+                            <h4>Responsive Design</h4>
+                            <p>Ensure your website looks great and functions flawlessly across all devices and screen sizes.</p>
+                        </article>
+                    </div>
+                </article>
+                <article class="about-services">
+                    <h3 class="title">Pricing</h3>
+                    <div class="line-left">
+                        <article class="line-down">
+                            <div class="fas fa-battery-half"></div>
+                            <h4>Basic Web Development</h4>
+                            <p>Create simple, responsive websites tailored to your needs.</p>
+                            <h4>₱2,500 / day</h4>
+                            <ul>
+                                <li>Up to 5 Pages</li>
+                                <li>Basic Design</li>
+                                <li>Standard Support</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Buy Basic</a>
+                        </article>
+                        <article class="line-down">
+                            <div class="fas fa-battery-full"></div>
+                            <h4>Advanced Web Development</h4>
+                            <p>Create dynamic, responsive websites with advanced features.</p>
+                            <h4>₱4,500 / day</h4>
+                            <ul>
+                                <li>Up to 15 Pages</li>
+                                <li>Custom Design</li>
+                                <li>Premium Support</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Buy Pro</a>
                         </article>
                     </div>
                 </article>
@@ -250,21 +262,21 @@
             <section id="contact" class="contact">
                 <h3 class="title">Get in Touch</h3>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17937.35447239902!2d123.11658184926944!3d11.54020680594334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1708953900172!5m2!1sen!2sph"
-                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17937.35447239902!2d123.11658184926944!3d11.54020680594334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1708953900172!5m2!1sen!2sph"
+                    width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="contact-information line-left">
                     <div>
-                        <span>ADDRESS . . . . </span> Iloilo, Philippines
+                        <span>ADDRESS:</span> Iloilo, Philippines
                     </div>
                     <div>
-                        <span>EMAIL . . . . </span> jezerniel.blanca@icloud.com
+                        <span>EMAIL:</span> jezerniel.blanca@icloud.com
                     </div>
                     <div>
-                        <span>PHONE . . . . </span> +639207834631
+                        <span>PHONE:</span> +639207834631
                     </div>
                     <div>
-                        <span>FREELANCE . . . . </span> Available
+                        <span>FREELANCE:</span> Available
                     </div>
                 </div>
             </section>
