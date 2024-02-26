@@ -1,48 +1,259 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .icon {
-            font-size: 48px;
-            animation: bounce 1s infinite alternate;
-        }
-
-        @keyframes bounce {
-            from {
-                transform: translateY(0);
-            }
-
-            to {
-                transform: translateY(-10px);
-            }
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Bootcamp / CV</title>
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Under Construction</h1>
-        <p>Will be live soon!</p>
-        <div class="icon">🚧</div>
+    <div class="background gradient">
+        <!-- Delete if animation
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+      -->
     </div>
+    <div class="page">
+        <header>
+            <nav>
+                <a href="#about" class="selected" id='getAbout'>
+                    <span class="fas fa-user"></span>
+                    <span class="link">About</span>
+                </a>
+                <a href="#resume" id='getResume'>
+                    <span class="fas fa-file"></span>
+                    <span class="link">Resume</span>
+                </a>
+                <a href="#contact" id='getContact'>
+                    <span class="fas fa-at"></span>
+                    <span class="link">Contact</span>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section id="presentation" class="profile">
+                <div class="profile-background">
+                    <img src="src/bg.jpeg" alt="bg image">
+                </div>
+                <div>
+                    <div class="profile-image">
+                        <img src="src/profile.png" alt="Ryan Adlard">
+                    </div>
+                    <h1 class="profile-name" id="nombre">Niel Blanca</h1>
+                    <h2 class="profile-profession">Full Stack Web Developer</h2>
+                    <div class="profile-social" id="profile-social">
+                        <a href="www.dribbble.com" class="fab fa-dribbble"></a>
+                        <a href="www.twitter.com" class="fab fa-twitter"></a>
+                        <a href="www.github.com" class="fab fa-github"></a>
+                        <a href="www.spotify.com" class="fab fa-spotify"></a>
+                        <a href="www.stackoverflow.com" class="fab fa-stack-overflow"></a>
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <a href="src/jezernielblanca.pdf" download>DOWNLOAD CV <i class="fas fa-download"></i></a>
+                    <a href="#contact" id="contactLink">CONTACT ME <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+            <section id="about" class="about view">
+                <article class="about-aboutMe">
+                    <h3 class="title">About Me</h3>
+                    <div class="line-left">
+                        <p>Hello, I'm Niel Blanca, a passionate full-stack web developer currently working at a company in Japan. I'm deeply
+                        enthusiastic about learning and mastering various aspects of web development. <br /><br />
+                    I have embarked on a journey to explore the realms of full-stack web development and its related technologies. With a
+                    keen interest in both front-end and back-end development, I am constantly seeking to expand my skill set and delve
+                    deeper into the world of programming.</p>
+                        <div>
+                            <div>
+                                <span>AGE . . . . </span>24
+                            </div>
+                            <div>
+                                <span>RESIDENCE . . . . </span>Philippines
+                            </div>
+                            <div>
+                                <span>FREELANCE . . . . </span>Available
+                            </div>
+                            <div>
+                                <span>ADDRESS . . . . </span>Iloilo City
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="about-services">
+                    <h3 class="title">My Services</h3>
+                    <div class="line-left">
+                        <article class="line-down">
+                            <div class="fas fa-code"></div>
+                            <h4>WEB DEVELOPMENT</h4>
+                            <p>Modern and mobile-ready website that will help you reach all of your marketing.</p>
+                        </article>
+                        <article class="line-down">
+                            <div class="fas fa-music"></div>
+                            <h4>MUSIC WRITING</h4>
+                            <p>Music copying, transcription, arranging and composition services.</p>
+                        </article>
+                        <article>
+                            <div class="fas fa-bullhorn"></div>
+                            <h4>ADVETISING</h4>
+                            <p>Advertising services include television, radio, print, mail and web.</p>
+                        </article>
+                        <article>
+                            <div class="fas fa-gamepad"></div>
+                            <h4>GAME DEVELOPMENT</h4>
+                            <p>Developing memorable and unique mobile android, ios games.</p>
+                        </article>
+                    </div>
+                </article>
+            </section>
+
+            <section id="resume" class="resume">
+                <h3 class="title">Resume</h3>
+                <article class="resume-lines">
+                    <section class="resume-line line-left">
+                        <h4 class="line-down"> <i class="fas fa-briefcase"></i> Experience</h4>
+                        <article class="line-down">
+                            <div class="date active">2023- PRESENT</div>
+                            <h5 class="name">Software Engineer - Web Dev.</h5>
+                            <h6 class="company">LivLine Japan</h6>
+                            <p>Collaborate with creative and development teams on the execution of ideas.</p>
+                        </article>
+                        <article class="line-down">
+                            <div class="date">2021 - 2023</div>
+                            <h5 class="name">SCRUM Master and Juinor Web Dev.</h5>
+                            <h6 class="company">Global Enablement Corp. Australia</h6>
+                            <p>Project: Online Event Organizer with 3D and AR feature.</p>
+                        </article>
+                        <article>
+                            <div class="date">2018 - 2021</div>
+                            <h5 class="name">Juinor Web Dev.</h5>
+                            <h6 class="company">Korean Company</h6>
+                            <p>Project: Online LMS for online english tutor.</p>
+                        </article>
+                    </section>
+                    <section class="resume-line line-left">
+                        <h4 class="line-down"> <i class="fas fa-university"></i> Education</h4>
+                        <article class="line-down">
+                            <div class="date">2018</div>
+                            <h5 class="name">BS COMPUTER SCIENCE</h5>
+                            <h6 class="company">NIPSC ILOILO</h6>
+                            <p>Bachelor's Degree in Computer Science NIPSC Institute</p>
+                        </article>
+                        <article class="line-down">
+                            <div class="date">2017</div>
+                            <h5 class="name">COMPUTER LITERATE</h5>
+                            <h6 class="company">ALS</h6>
+                            <p>ALS CARLES ILOILO</p>
+                        </article>
+                    </section>
+                </article>
+                <article class="resume-skills">
+                    <h3 class="title">My Skills</h3>
+                    <div>
+                        <section class="line-left">
+                            <h4 class="line-down"> <i class="fas fa-tv"></i> DESIGN</h4>
+                            <div class="line-down">
+                                <div>Web Design</div>
+                                <div>
+                                    <div style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="line-down">
+                                <div>MIRO</div>
+                                <div>
+                                    <div style="width: 76%"></div>
+                                </div>
+                            </div>
+                            <div class="line-down">
+                                <div>Photoshop</div>
+                                <div>
+                                    <div style="width: 66%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>Graphic Design</div>
+                                <div>
+                                    <div style="width: 86%"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="line-left">
+                            <h4 class="line-down"><i class="fas fa-code"></i> CODING</h4>
+                            <div class="line-down">
+                                <div>LARAVEL</div>
+                                <div>
+                                    <div style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="line-down">
+                                <div>CODEIGNITER</div>
+                                <div>
+                                    <div style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="line-down">
+                                <div>PHP/MYSQL</div>
+                                <div>
+                                    <div style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="line-down">
+                                <div>JavaScript</div>
+                                <div>
+                                    <div style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTML/CSS</div>
+                                <div>
+                                    <div style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </section>
+
+            <section id="contact" class="contact">
+                <h3 class="title">Get in Touch</h3>
+                <div class="contact-information line-left">
+                    <div>
+                        <span>ADDRESS . . . . </span> Iloilo, Philippines
+                    </div>
+                    <div>
+                        <span>EMAIL . . . . </span> jezerniel.blanca@icloud.com
+                    </div>
+                    <div>
+                        <span>PHONE . . . . </span> +639207834631
+                    </div>
+                    <div>
+                        <span>FREELANCE . . . . </span> Available
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
 </body>
 
 </html>
