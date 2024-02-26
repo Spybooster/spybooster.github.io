@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootcamp / CV</title>
     <link type="text/css" rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" />
@@ -11,15 +11,32 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
         integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        // Get the current hour
+        var currentHour = new Date().getHours();
+
+        // Define the CSS file URLs for morning and night
+        var morningCSS = 'light.css';
+        var nightCSS = 'dark.css';
+
+        // Determine whether it's morning or night
+        var selectedCSS = currentHour >= 6 && currentHour < 18 ? morningCSS : nightCSS;
+
+        // Create a new link element for the stylesheet
+        var linkElement = document.createElement('link');
+        linkElement.setAttribute('rel', 'stylesheet');
+        linkElement.setAttribute('type', 'text/css');
+        linkElement.setAttribute('href', selectedCSS);
+
+        // Append the link element to the head of the document
+        document.head.appendChild(linkElement);
+    </script>
 </head>
 
 <body>
     <div class="background gradient">
-        <!-- Delete if animation
         <ul class="bg-bubbles">
             <li></li>
             <li></li>
@@ -32,7 +49,7 @@
             <li></li>
             <li></li>
         </ul>
-      -->
+     
     </div>
     <div class="page">
         <header>
@@ -63,11 +80,7 @@
                     <h1 class="profile-name" id="nombre">Niel Blanca</h1>
                     <h2 class="profile-profession">Full Stack Web Developer</h2>
                     <div class="profile-social" id="profile-social">
-                        <a href="www.dribbble.com" class="fab fa-dribbble"></a>
-                        <a href="www.twitter.com" class="fab fa-twitter"></a>
-                        <a href="www.github.com" class="fab fa-github"></a>
-                        <a href="www.spotify.com" class="fab fa-spotify"></a>
-                        <a href="www.stackoverflow.com" class="fab fa-stack-overflow"></a>
+                        <a href="https://github.com/Spybooster" class="fab fa-github" target="_blank"></a>
                     </div>
                 </div>
                 <div class="profile-buttons">
@@ -173,25 +186,25 @@
                         <section class="line-left">
                             <h4 class="line-down"> <i class="fas fa-tv"></i> DESIGN</h4>
                             <div class="line-down">
-                                <div>Web Design</div>
+                                <div style="color: aliceblue;">Web Design</div>
                                 <div>
                                     <div style="width: 80%"></div>
                                 </div>
                             </div>
                             <div class="line-down">
-                                <div>MIRO</div>
+                                <div style="color: aliceblue;">MIRO</div>
                                 <div>
                                     <div style="width: 76%"></div>
                                 </div>
                             </div>
                             <div class="line-down">
-                                <div>Photoshop</div>
+                                <div style="color: aliceblue;">Photoshop</div>
                                 <div>
                                     <div style="width: 66%"></div>
                                 </div>
                             </div>
                             <div>
-                                <div>Graphic Design</div>
+                                <div style="color: aliceblue;">Graphic Design</div>
                                 <div>
                                     <div style="width: 86%"></div>
                                 </div>
@@ -200,31 +213,31 @@
                         <section class="line-left">
                             <h4 class="line-down"><i class="fas fa-code"></i> CODING</h4>
                             <div class="line-down">
-                                <div>LARAVEL</div>
+                                <div style="color: aliceblue;">LARAVEL</div>
                                 <div>
                                     <div style="width: 80%"></div>
                                 </div>
                             </div>
                             <div class="line-down">
-                                <div>CODEIGNITER</div>
+                                <div style="color: aliceblue;">CODEIGNITER</div>
                                 <div>
                                     <div style="width: 75%"></div>
                                 </div>
                             </div>
                             <div class="line-down">
-                                <div>PHP/MYSQL</div>
+                                <div style="color: aliceblue;">PHP/MYSQL</div>
                                 <div>
                                     <div style="width: 90%"></div>
                                 </div>
                             </div>
                             <div class="line-down">
-                                <div>JavaScript</div>
+                                <div style="color: aliceblue;">JavaScript</div>
                                 <div>
                                     <div style="width: 80%"></div>
                                 </div>
                             </div>
                             <div>
-                                <div>HTML/CSS</div>
+                                <div style="color: aliceblue;">HTML/CSS</div>
                                 <div>
                                     <div style="width: 80%"></div>
                                 </div>
@@ -236,6 +249,10 @@
 
             <section id="contact" class="contact">
                 <h3 class="title">Get in Touch</h3>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17937.35447239902!2d123.11658184926944!3d11.54020680594334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1708953900172!5m2!1sen!2sph"
+                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="contact-information line-left">
                     <div>
                         <span>ADDRESS . . . . </span> Iloilo, Philippines
